@@ -42,7 +42,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom propertiesHi frontender :)
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-This challenge helped me to better understand the use of the CSS `grid` and to discover some new CSS properties, such as:  
+This challenge helped me to better understand the advanced use of the CSS `grid` and to discover some new CSS properties, such as :  
 ```css
 .example {
   padding-inline: clamp(1.5rem, 5vw, 3.5rem);
