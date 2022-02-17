@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="https://denielden.github.io/img/favicon.svg" type="image/svg+xml">
+   <meta name="author" content="Deniel Den">
+   <title>Space tourism | Frontend Mentor</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="home">
+
+   <a href="#main" class="skip-to-content">Skip to content</a>
+
+   <header class="primary-header flex">
+      <div>
+         <img src="./img/logo.svg" class="logo" loading="lazy" alt="Space tourism logo">
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-nav"><span class="sr-only" aria-expanded="false">Menu</span></button>
+      <nav>
+         <ul id="primary-nav" data-visible="false" class="flex primary-nav underline-indicators">
+            <li class="active">
+               <a href="/" class="ff-sans-cond uppercase txt-white ls-2">
+                  <span aria-hidden="hidden">00</span>Home
+               </a>
+            </li>
+            <li>
+               <a href="destination" class="ff-sans-cond uppercase txt-white ls-2">
+                  <span aria-hidden="hidden">01</span>Destination
+               </a>
+            </li>
+            <li>
+               <a href="crew" class="ff-sans-cond uppercase txt-white ls-2">
+                  <span aria-hidden="hidden">02</span>Crew
+               </a>
+            </li>
+            <li>
+               <a href="technology" class="ff-sans-cond uppercase txt-white ls-2">
+                  <span aria-hidden="hidden">03</span>Technology
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   
+   <main class="grid-container grid-container--home" id="main">
+      <div>
+         <h1 class="fs-500 ff-sans-cond txt-accent uppercase ls-1 fadein">
+            So, you want to travel to
+            <span class="d-block fs-900 ff-serif txt-white">Space</span>
+         </h1>
+         <p class="fadein">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      </div>
+      
+      <div>
+         <a href="destination" class="btn-lg uppercase txt-dark bg-white ff-serif">Explore</a>
+      </div>
+   </main>
+
+   <script src="./js/navbar.js" defer></script>
+</body>
+</html>
