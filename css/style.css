@@ -272,13 +272,16 @@ select {
     position: absolute;
     right: 1rem;
     top: 2rem;
-    background: transparent url(../img/icon-hamburger.svg) no-repeat center center;
+    background: transparent;
+    background-image: url(../img/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     width: 1.5rem;
     aspect-ratio: 1;
     z-index: 2000;
   }
   .mobile-nav-toggle[aria-expanded="true"]{
-    background: transparent url(../img/icon-close.svg) no-repeat center center;
+    background-image: url(../img/icon-close.svg);
   }
   .primary-nav {
     --underline-gap: .5rem;
@@ -461,6 +464,9 @@ select {
 .grid-container--technology > .technology-details {
   grid-area: content;
 }
+.grid-container--technology > article {
+  padding-inline: 1rem;
+}
 
 @media (min-width: 35em) {
   .numb-title {
@@ -481,6 +487,9 @@ select {
   .grid-container--technology > .numb-title {
       margin-left: 1rem;
   }
+  .grid-container--technology > article {
+    padding-inline: 0;
+  }
 }
 @media (min-width: 45em) {
   .grid-container {
@@ -489,7 +498,7 @@ select {
     text-align: left;
   }
   .grid-container--home {
-    padding-bottom: max(6rem, 10vh);
+    padding-bottom: max(8rem, 12vh);
     align-items: end;
   }
   .grid-container--home > *:first-child {
