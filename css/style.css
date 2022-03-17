@@ -630,6 +630,62 @@ body {
   }
 }
 
+/* attribution */
+.attribution {
+	display: block;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	background-image: url('https://avatars.githubusercontent.com/u/75424016?v=4');
+	background-size: 100%;
+	height: 4rem;
+	width: 4rem;
+	border-radius:100%;
+	z-index: 99;
+}
+.attribution p {
+	visibility: hidden;
+	position: fixed;
+	bottom: 4.5rem;
+	right: 5rem;
+	width: 13.5rem;
+	padding: .5rem 1rem;
+	border-radius: 1rem 1rem 0;
+	background-color: hsl( var(--dark) );
+	font-size: .8rem;
+	text-align: left;
+	z-index: 999;
+	box-shadow: 0 0 .3rem hsl( var(--light) );
+	transform: rotateX(90deg);
+	transition: .8s cubic-bezier(.06, .8, .1, 1);
+}
+.attribution:hover p {
+	visibility: visible; 
+	transform: rotateX(0);
+}
+.attribution a {
+   text-decoration: underline;
+   font-weight: 800;
+}
+
+@media screen and (max-width: 800px) {
+	.attribution {
+		position: relative;
+		height: 3.5rem;
+		width: 3.5rem;
+		margin-top: 6rem;
+		left: 1rem;
+	}
+	.attribution p {
+		position: relative;
+		visibility: visible;
+		border-radius: 1rem;
+		transform: rotateX(0);
+		left: 4rem;
+		bottom: -.2rem;
+	}
+}
+
 /* animation */
 @keyframes pulse {
   0% { transform: scale(1); }
